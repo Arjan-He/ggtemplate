@@ -82,6 +82,18 @@ Marcels CSS---------------------------------------*/
   
 }
 
+.gg-button-big{
+  border-radius: 24px;
+  background-color: rgb(71, 178, 228);
+  border-color: rgb(71, 178, 228);
+  font-size: 16px;
+}
+
+.carousel-caption{
+  left:0;
+  right:0;
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -97,10 +109,17 @@ Marcels CSS---------------------------------------*/
   .featurette-heading {
     font-size: 50px;
   }
+
 }
 
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+
+}
+@media (max-width: 48em) {
+  .navbar{
+    background-color: rgb(55, 81, 126) !important;
   }
 }
