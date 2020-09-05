@@ -15,6 +15,9 @@ body {
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
+  background: url('image/homelogo.jpg') ;
+  background-size: cover;
+  background-position: center center;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -56,16 +59,22 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 2rem 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
 .featurette-heading {
+  margin-top: 3 rem;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
 }
 
+.featurette {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -79,12 +88,13 @@ body {
   }
 
   .featurette-heading {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
 @media (min-width: 62em) {
   .featurette-heading {
-    margin-top: 7rem;
+    margin-top: 3rem;
+	margin-bottom: 1.5rem;
   }
 }
