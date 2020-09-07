@@ -40,7 +40,7 @@ a:hover {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 34rem;
 }
 .carousel-item > img {
   position: absolute;
@@ -90,6 +90,47 @@ a:hover {
     flex-wrap: wrap;
 }
 
+/* css voorde accordeon buttons */
+
+#vgv {
+	align-items: flex-start;
+}
+
+.accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* css voor het accordeon menu bij veelgestelde vragen */
+.content {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion::before {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #0070bf !important;
+  float: left;
+  margin-left: 1px;
+}
+
+.active::before {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.accordion:hover {
+  color: #0070bf;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
