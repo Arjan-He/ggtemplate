@@ -1,3 +1,4 @@
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -6,7 +7,19 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
+  font-family: 'Gadugi', 'sans-serif';
 }
+
+a {
+	font-family: 'Gadugi', 'sans-serif';
+	color: #0070bf;
+}
+
+a:hover {
+  color: #0070bf;
+  text-decoration: underline;
+}
+
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -47,7 +60,7 @@ body {
   text-align: center;
 }
 .marketing h2 {
-  font-weight: 400;
+  font-weight: 500;
 }
 .marketing .col-lg-4 p {
   margin-right: .75rem;
@@ -64,6 +77,7 @@ body {
 
 /* Thin out the marketing headings */
 .featurette-heading {
+  color: #0070bf;
   margin-top: 3 rem;
   font-weight: 300;
   line-height: 1;
