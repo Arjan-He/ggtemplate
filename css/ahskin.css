@@ -1,3 +1,4 @@
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -6,7 +7,19 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
+  font-family: 'Gadugi', 'sans-serif';
 }
+
+a {
+	font-family: 'Gadugi', 'sans-serif';
+	color: #0070bf;
+}
+
+a:hover {
+  color: #0070bf;
+  text-decoration: underline;
+}
+
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -15,6 +28,9 @@ body {
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
+  background: url('image/homelogo.jpg') ;
+  background-size: cover;
+  background-position: center center;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -24,7 +40,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 34rem;
 }
 .carousel-item > img {
   position: absolute;
@@ -44,7 +60,7 @@ body {
   text-align: center;
 }
 .marketing h2 {
-  font-weight: 400;
+  font-weight: 500;
 }
 .marketing .col-lg-4 p {
   margin-right: .75rem;
@@ -56,17 +72,65 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 2rem 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
 .featurette-heading {
+  color: #0070bf;
+  margin-top: 3 rem;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
 }
 
+.featurette {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+/* css voorde accordeon buttons */
+
+#vgv {
+	align-items: flex-start;
+}
+
+.accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* css voor het accordeon menu bij veelgestelde vragen */
+.content {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion::before {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #0070bf !important;
+  float: left;
+  margin-left: 1px;
+}
+
+.active::before {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.accordion:hover {
+  color: #0070bf;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -79,12 +143,13 @@ body {
   }
 
   .featurette-heading {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
 @media (min-width: 62em) {
   .featurette-heading {
-    margin-top: 7rem;
+    margin-top: 3rem;
+	margin-bottom: 1.5rem;
   }
 }
