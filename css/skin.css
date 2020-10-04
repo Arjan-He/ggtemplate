@@ -1,4 +1,3 @@
-
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -7,7 +6,6 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
-  font-family: 'Gadugi', 'sans-serif';
 }
 
 a {
@@ -19,8 +17,6 @@ a:hover {
   color: #0070bf;
   text-decoration: underline;
 }
-
-
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -40,7 +36,7 @@ a:hover {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 34rem;
+  height: 32rem;
 }
 .carousel-item > img {
   position: absolute;
@@ -60,7 +56,7 @@ a:hover {
   text-align: center;
 }
 .marketing h2 {
-  font-weight: 500;
+  font-weight: 400;
 }
 .marketing .col-lg-4 p {
   margin-right: .75rem;
@@ -90,7 +86,33 @@ a:hover {
     flex-wrap: wrap;
 }
 
-/* css voorde accordeon buttons */
+/*
+Marcels CSS---------------------------------------*/
+.bg-panelblue{
+
+  background-color: rgb(55, 81, 126) !important;
+
+}
+
+.bg-transparent{
+  background: none; 
+  
+}
+
+.gg-button-big{
+  border-radius: 24px;
+  background-color: rgb(71, 178, 228);
+  border-color: rgb(71, 178, 228);
+  font-size: 16px;
+}
+
+.carousel-caption{
+  left:0;
+  right:0;
+}
+
+/*
+CSS ACCORDEON MENU BIJ VEELGESTELDE VRAGEN */
 
 #vgv {
 	align-items: flex-start;
@@ -124,13 +146,14 @@ a:hover {
   margin-left: 1px;
 }
 
-.active::before {
+.accordion-active::before {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 .accordion:hover {
   color: #0070bf;
 }
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -143,13 +166,19 @@ a:hover {
   }
 
   .featurette-heading {
-    font-size: 40px;
+    font-size: 50px;
   }
+
 }
 
 @media (min-width: 62em) {
   .featurette-heading {
-    margin-top: 3rem;
-	margin-bottom: 1.5rem;
+    margin-top: 7rem;
+  }
+
+}
+@media (max-width: 48em) {
+  .navbar{
+    background-color: rgb(55, 81, 126) !important;
   }
 }
